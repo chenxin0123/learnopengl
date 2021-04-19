@@ -71,7 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\git\learnopen\glfw\lib-vc2017;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glfw\lib-vc2017;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\glad\src\glad.c" />
-    <ClCompile Include="..\..\..\glad\src\main.c" />
     <ClCompile Include="a.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
