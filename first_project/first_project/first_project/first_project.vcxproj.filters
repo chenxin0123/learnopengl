@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\Shader">
+      <UniqueIdentifier>{b077fe4a-e6ae-4715-9b9c-1c6decfa18c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\resources">
+      <UniqueIdentifier>{0941c5e2-4e8b-4241-af09-fe03671f45a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\resources\textures">
+      <UniqueIdentifier>{1dd4e6e8-adac-49cc-8cbb-38e11007ba5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\glad\src\glad.c">
@@ -32,13 +41,33 @@
     <ClInclude Include="shader_s.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\stb\stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.vs">
-      <Filter>资源文件</Filter>
-    </None>
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.fs">
-      <Filter>资源文件</Filter>
+      <Filter>资源文件\Shader</Filter>
     </None>
+    <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\resources\textures\awesomeface.png">
+      <Filter>资源文件\resources\textures</Filter>
+    </Image>
+    <Image Include="..\..\..\resources\textures\container.jpg">
+      <Filter>资源文件\resources\textures</Filter>
+    </Image>
+    <Image Include="..\..\..\resources\textures\wall.jpg">
+      <Filter>资源文件\resources\textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>

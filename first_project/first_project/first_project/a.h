@@ -1,3 +1,4 @@
 
-int ShaderClass();
 int HelloTriangle();
+int ShaderClass();
+int DrawTexture();

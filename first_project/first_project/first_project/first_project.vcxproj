@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\stb;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glfw\lib-vc2017;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -132,12 +132,20 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\stb\stb_image.h" />
     <ClInclude Include="a.h" />
     <ClInclude Include="shader_s.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.fs" />
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.vs" />
+    <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.fs" />
+    <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\resources\textures\awesomeface.png" />
+    <Image Include="..\..\..\resources\textures\container.jpg" />
+    <Image Include="..\..\..\resources\textures\wall.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

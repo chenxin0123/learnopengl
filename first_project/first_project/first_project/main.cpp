@@ -6,7 +6,7 @@
 
 int main()
 {	
-	return ShaderClass();
+	return DrawTexture();
 
 	/*LoadGLLoader();
 	int nrAttributes;
