@@ -144,6 +144,8 @@
     <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.vs" />
     <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.fs" />
     <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.vs" />
+    <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.fs" />
+    <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\resources\textures\awesomeface.png" />

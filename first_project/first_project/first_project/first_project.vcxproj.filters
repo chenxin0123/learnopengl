@@ -67,6 +67,12 @@
     <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
+    <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\resources\textures\awesomeface.png">
