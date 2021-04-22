@@ -6,5 +6,5 @@
 
 int main()
 {	
-	return CoordinateSystemTransform();
+	return CameraDemo();
 }
