@@ -6,7 +6,7 @@
 
 int main()
 {	
-	return DrawTexture();
+	return FirstTransform();
 
 	/*LoadGLLoader();
 	int nrAttributes;

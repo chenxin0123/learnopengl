@@ -44,6 +44,9 @@
     <ClInclude Include="..\..\..\stb\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\glm\glm.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.fs">
@@ -56,6 +59,12 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>
