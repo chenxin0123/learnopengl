@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\stb;$(ProjectDIr)\..\..\..;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\classes;$(ProjectDIr)\..\..\..\stb;$(ProjectDIr)\..\..\..;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glfw\lib-vc2017;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -132,10 +132,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\classes\camera.h" />
+    <ClInclude Include="..\..\..\classes\shader_s.h" />
     <ClInclude Include="..\..\..\glm\glm.hpp" />
     <ClInclude Include="..\..\..\stb\stb_image.h" />
     <ClInclude Include="a.h" />
-    <ClInclude Include="shader_s.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.fs" />

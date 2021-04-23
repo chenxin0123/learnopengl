@@ -6,5 +6,5 @@
 
 int main()
 {	
-	return CameraDemo();
+	return CameraCLass();
 }
