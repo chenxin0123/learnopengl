@@ -1,7 +1,7 @@
 //#include <glad/glad.h>
 //#include <GLFW/glfw3.h>
 //#include <iostream>
-//#include <shader_s.h>
+//#include <shader_m.h>
 //#define STB_IMAGE_IMPLEMENTATION
 //#include "stb_image.h"
 //
@@ -144,7 +144,7 @@
 //
 //	// build and compile our shader program
 //	// ------------------------------------
-//	Shader ourShader("./../../../shader/6.1.shaders_class/6.1.shader.vs", "./../../../shader/6.1.shaders_class/6.1.shader.fs"); // you can name your shader files however you like
+//	Shader ourShader("./../../../shader/6.1.shaders_class/6.1.shader.vs", "./../../../shader/6.1.shaders_class/6.1.shader.fs",true); // you can name your shader files however you like
 //
 //	// set up vertex data (and buffer(s)) and configure vertex attributes
 //	// ------------------------------------------------------------------
@@ -370,7 +370,7 @@
 //
 //	// build and compile our shader program
 //	// ------------------------------------
-//	Shader ourShader("./../../../shader/6.1.shaders_class/6.1.shader.vs", "./../../../shader/6.1.shaders_class/6.1.shader.fs"); // you can name your shader files however you like
+//	Shader ourShader("./../../../shader/6.1.shaders_class/6.1.shader.vs", "./../../../shader/6.1.shaders_class/6.1.shader.fs",true); // you can name your shader files however you like
 //
 //	// set up vertex data (and buffer(s)) and configure vertex attributes
 //	// ------------------------------------------------------------------
@@ -612,7 +612,7 @@
 //
 //	// build and compile our shader program
 //	// ------------------------------------
-//	Shader ourShader("./../../../shader/6.1.shaders_class/6.1.shader.vs", "./../../../shader/6.1.shaders_class/6.1.shader.fs"); // you can name your shader files however you like
+//	Shader ourShader("./../../../shader/6.1.shaders_class/6.1.shader.vs", "./../../../shader/6.1.shaders_class/6.1.shader.fs",true); // you can name your shader files however you like
 //
 //	// set up vertex data (and buffer(s)) and configure vertex attributes
 //	// ------------------------------------------------------------------
@@ -853,7 +853,7 @@
 //
 //	// build and compile our shader program
 //	// ------------------------------------
-//	Shader ourShader("./../../../shader/5.1.shaders_class/5.1.shader.vs", "./../../../shader/5.1.shaders_class/5.1.shader.fs"); // you can name your shader files however you like
+//	Shader ourShader("./../../../shader/5.1.shaders_class/5.1.shader.vs", "./../../../shader/5.1.shaders_class/5.1.shader.fs",true); // you can name your shader files however you like
 //
 //	// set up vertex data (and buffer(s)) and configure vertex attributes
 //	// ------------------------------------------------------------------
@@ -1007,7 +1007,7 @@
 //
 //	// build and compile our shader program
 //	// ------------------------------------
-//	Shader ourShader("./../../../shader/4.1.shaders_class/4.1.shader.vs", "./../../../shader/4.1.shaders_class/4.1.shader.fs"); // you can name your shader files however you like
+//	Shader ourShader("./../../../shader/4.1.shaders_class/4.1.shader.vs", "./../../../shader/4.1.shaders_class/4.1.shader.fs",true); // you can name your shader files however you like
 //
 //	// set up vertex data (and buffer(s)) and configure vertex attributes
 //	// ------------------------------------------------------------------
@@ -1162,7 +1162,7 @@
 //
 //	// build and compile our shader program
 //	// ------------------------------------
-//	Shader ourShader("./../../../shader/3.3.shaders_class/3.3.shader.vs", "./../../../shader/3.3.shaders_class/3.3.shader.fs"); // you can name your shader files however you like
+//	Shader ourShader("./../../../shader/3.3.shaders_class/3.3.shader.vs", "./../../../shader/3.3.shaders_class/3.3.shader.fs",true); // you can name your shader files however you like
 //
 //	// set up vertex data (and buffer(s)) and configure vertex attributes
 //	// ------------------------------------------------------------------

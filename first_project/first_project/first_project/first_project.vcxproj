@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\classes;$(ProjectDIr)\..\..\..\stb;$(ProjectDIr)\..\..\..;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\classes;$(ProjectDIr)\..\..\..\stb;$(ProjectDIr)\..\..\..;$(ProjectDIr)\..\..\..\;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glfw\lib-vc2017;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -131,13 +131,15 @@
     <ClCompile Include="a.cpp" />
     <ClCompile Include="basic_lighting_diffuse.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="materials.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\classes\camera.h" />
-    <ClInclude Include="..\..\..\classes\shader_s.h" />
+    <ClInclude Include="..\..\..\classes\shader_m.h" />
     <ClInclude Include="..\..\..\glm\glm.hpp" />
     <ClInclude Include="..\..\..\stb\stb_image.h" />
     <ClInclude Include="a.h" />
+    <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.basic_lighting.fs" />

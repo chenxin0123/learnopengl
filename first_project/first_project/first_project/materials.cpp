@@ -1,6 +1,6 @@
 
-#ifdef basic_lighting_diffuse_main
-
+#include "pch.h"
+#ifdef MATERIALS_MAIN
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -13,18 +13,6 @@
 #include <camera.h>
 
 #include <iostream>
-
-//#include <glad/glad.h>
-//#include <GLFW/glfw3.h>
-//#include <iostream>
-//#include <shader_m.h>
-//#define STB_IMAGE_IMPLEMENTATION
-//#include "stb_image.h"
-//
-//#include <glm/glm.hpp>
-//#include <glm/gtc/matrix_transform.hpp>
-//#include <glm/gtc/type_ptr.hpp>
-//#include <camera.h>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -48,7 +36,7 @@ float lastFrame = 0.0f;
 // lighting
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
-int basic_lighting_diffuse_main()
+int materials_main()
 {
 	// glfw: initialize and configure
 	// ------------------------------
@@ -92,8 +80,8 @@ int basic_lighting_diffuse_main()
 
 	// build and compile our shader zprogram
 	// ------------------------------------
-	Shader lightingShader("./../../../shader/2.1.basic_lighting_diffuse/2.1.basic_lighting.vs", "./../../../shader/2.1.basic_lighting_diffuse/2.1.basic_lighting.fs", true);
-	Shader lightCubeShader("./../../../shader/2.1.basic_lighting_diffuse/2.1.light_cube.vs", "./../../../shader/2.1.basic_lighting_diffuse/2.1.light_cube.fs", true);
+	Shader lightingShader("3.1.materials.vs", "3.1.materials.fs");
+	Shader lightCubeShader("3.1.light_cube.vs", "3.1.light_cube.fs");
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
@@ -188,15 +176,27 @@ int basic_lighting_diffuse_main()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
-        lightPos.y = sin(glfwGetTime() / 2.0f) * 1.0f;
-
 		// be sure to activate shader when setting uniforms/drawing objects
 		lightingShader.use();
-		lightingShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
-		lightingShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
-		lightingShader.setVec3("lightPos", lightPos);
+		lightingShader.setVec3("light.position", lightPos);
 		lightingShader.setVec3("viewPos", camera.Position);
+
+		// light properties
+		glm::vec3 lightColor;
+		lightColor.x = sin(glfwGetTime() * 2.0f);
+		lightColor.y = sin(glfwGetTime() * 0.7f);
+		lightColor.z = sin(glfwGetTime() * 1.3f);
+		glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f); // decrease the influence
+		glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
+		lightingShader.setVec3("light.ambient", ambientColor);
+		lightingShader.setVec3("light.diffuse", diffuseColor);
+		lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+
+		// material properties
+		lightingShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
+		lightingShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
+		lightingShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f); // specular lighting doesn't have full effect on this object's material
+		lightingShader.setFloat("material.shininess", 32.0f);
 
 		// view/projection transformations
 		glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
@@ -297,5 +297,4 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
 	camera.ProcessMouseScroll(yoffset);
 }
-
 #endif

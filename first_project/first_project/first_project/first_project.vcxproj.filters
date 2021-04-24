@@ -36,6 +36,9 @@
     <ClCompile Include="a.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="materials.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -44,14 +47,17 @@
     <ClInclude Include="..\..\..\glm\glm.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\classes\shader_s.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\classes\camera.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="a.h">
       <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\classes\shader_m.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
