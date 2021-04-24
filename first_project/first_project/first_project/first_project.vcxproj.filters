@@ -39,6 +39,9 @@
     <ClCompile Include="materials.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -57,6 +60,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\classes\shader_m.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -95,6 +101,18 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.light_cube.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\3.1.light_cube.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\3.1.light_cube.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\3.1.materials.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\3.1.materials.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>
