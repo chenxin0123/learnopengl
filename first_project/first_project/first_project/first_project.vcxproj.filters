@@ -27,17 +27,17 @@
     <ClCompile Include="..\..\..\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="a.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="basic_lighting_diffuse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="a.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="a.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\stb\stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -49,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\classes\camera.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="a.h">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +77,18 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.basic_lighting.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.basic_lighting.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.light_cube.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.light_cube.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>

@@ -4,7 +4,10 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+
+int basic_lighting_diffuse_main();
+
 int main()
 {	
-	return CameraCLass();
+	return basic_lighting_diffuse_main();
 }
