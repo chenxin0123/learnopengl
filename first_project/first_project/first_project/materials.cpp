@@ -35,9 +35,6 @@ bool firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
-// lighting
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
-
 int materials_main()
 {
 	// glfw: initialize and configure
@@ -80,8 +77,8 @@ int materials_main()
 	// -----------------------------
 	glEnable(GL_DEPTH_TEST);
 
-	// build and compile shaders
-	// -------------------------
+	// build and compile our shader zprogram
+	// ------------------------------------
 	Shader lightingShader("3.1.materials.vs", "3.1.materials.fs");
 	Shader lightCubeShader("3.1.light_cube.vs", "3.1.light_cube.fs");
 
@@ -174,6 +171,7 @@ int materials_main()
 	// -----------------------------------------------------------------------------
 	unsigned int diffuseMap = loadTexture(FileSystem::getPath("resources/textures/container2.png").c_str());
 	unsigned int specularMap = loadTexture(FileSystem::getPath("resources/textures/container2_specular.png").c_str());
+
 	// shader configuration
 	// --------------------
 	lightingShader.use();
@@ -202,12 +200,17 @@ int materials_main()
 
 		// be sure to activate shader when setting uniforms/drawing objects
 		lightingShader.use();
-		lightingShader.setVec3("light.position", lightPos);
+		lightingShader.setVec3("light.position", camera.Position);
+		lightingShader.setVec3("light.direction", camera.Front);
+		lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
+		lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
 		lightingShader.setVec3("viewPos", camera.Position);
 
 		// light properties
-		lightingShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
-		lightingShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
+		lightingShader.setVec3("light.ambient", 0.1f, 0.1f, 0.1f);
+		// we configure the diffuse intensity slightly higher; the right lighting conditions differ with each lighting method and environment.
+		// each environment and lighting type requires some tweaking to get the best out of your environment.
+		lightingShader.setVec3("light.diffuse", 0.8f, 0.8f, 0.8f);
 		lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 		lightingShader.setFloat("light.constant", 1.0f);
 		lightingShader.setFloat("light.linear", 0.09f);
@@ -247,18 +250,17 @@ int materials_main()
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
 
+		// again, a lamp object is weird when we only have a spot light, don't render the light object
+		// lightCubeShader.use();
+		// lightCubeShader.setMat4("projection", projection);
+		// lightCubeShader.setMat4("view", view);
+		// model = glm::mat4(1.0f);
+		// model = glm::translate(model, lightPos);
+		// model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
+		// lightCubeShader.setMat4("model", model);
 
-		// also draw the lamp object
-		lightCubeShader.use();
-		lightCubeShader.setMat4("projection", projection);
-		lightCubeShader.setMat4("view", view);
-		model = glm::mat4(1.0f);
-		model = glm::translate(model, lightPos);
-		model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
-		lightCubeShader.setMat4("model", model);
-
-		glBindVertexArray(lightCubeVAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		// glBindVertexArray(lightCubeVAO);
+		// glDrawArrays(GL_TRIANGLES, 0, 36);
 
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
