@@ -1,16 +1,12 @@
 #ifndef CX_PCH_H
 #define CX_PCH_H
 
-#define STB_IMAGE_IMPLEMENTATION
-
 #include "FileSystem.h"
-#define MATERIALS_MAIN
-
-//#include "pch.h"
-//#ifdef MATERIALS_MAIN
-//#endif
 
 
+//#define BASIC_LIGHTING_DIFFUSE_MAIN
+//#define MATERIALS_MAIN
+#define MODEL_LOADING_MAIN
 
 
 

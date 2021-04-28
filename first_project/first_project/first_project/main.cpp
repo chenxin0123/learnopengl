@@ -1,7 +1,6 @@
 
-#include "pch.h"
-#include "a.h"
 
+#include "pch.h"
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -15,10 +14,14 @@ int basic_lighting_diffuse_main();
 int materials_main();
 #endif
 
+#ifdef MODEL_LOADING_MAIN
+int model_loading_main();
+#endif
+
 int main()
 {	
-#ifdef MATERIALS_MAIN
-	return materials_main();
+#ifdef MODEL_LOADING_MAIN
+	return model_loading_main();
 #endif
 	return 1;
 }
