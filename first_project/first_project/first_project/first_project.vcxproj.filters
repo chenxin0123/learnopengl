@@ -127,6 +127,12 @@
     <None Include="..\..\..\shader\3.1.materials.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
+    <None Include="..\..\..\shader\1.model_loading.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\1.model_loading.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\resources\textures\awesomeface.png">
