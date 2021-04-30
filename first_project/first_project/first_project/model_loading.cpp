@@ -79,7 +79,8 @@ int model_loading_main()
     // configure global opengl state
     // -----------------------------
     glEnable(GL_DEPTH_TEST);
-
+	glEnable(GL_STENCIL_TEST);
+	glStencilFunc(GL_EQUAL, 1, 0xFF);
     // build and compile shaders
     // -------------------------
     Shader ourShader("1.model_loading.vs", "1.model_loading.fs");
@@ -109,8 +110,8 @@ int model_loading_main()
         // render
         // ------
         glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+		glStencilMask(0x00);
         // don't forget to enable shader before setting uniforms
         ourShader.use();
 
