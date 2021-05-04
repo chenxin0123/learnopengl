@@ -22,11 +22,16 @@ int model_loading_main();
 int stencil_tesing_cpp();
 #endif
 
+#ifdef BLENDING_SORTED
+int blending_sorted();
+#endif
+
+
 
 int main()
 {	
-#ifdef STENCIL_TESTING_MAIN
-	return stencil_tesing_cpp();
+#ifdef BLENDING_SORTED
+	return blending_sorted();
 #endif
 	return 1;
 }

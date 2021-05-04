@@ -132,6 +132,7 @@
     <ClCompile Include="..\..\..\glad\src\glad.c" />
     <ClCompile Include="a.cpp" />
     <ClCompile Include="basic_lighting_diffuse.cpp" />
+    <ClCompile Include="blending_sorted.cpp" />
     <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="materials.cpp" />
@@ -164,6 +165,8 @@
     <None Include="..\..\..\shader\3.1.light_cube.vs" />
     <None Include="..\..\..\shader\3.1.materials.fs" />
     <None Include="..\..\..\shader\3.1.materials.vs" />
+    <None Include="..\..\..\shader\3.2.blending.fs" />
+    <None Include="..\..\..\shader\3.2.blending.vs" />
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.fs" />
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.vs" />
     <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.fs" />
