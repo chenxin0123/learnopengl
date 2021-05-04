@@ -45,6 +45,9 @@
     <ClCompile Include="model_loading.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="stencil_testing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -131,6 +134,15 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\1.model_loading.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.stencil_single_color.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.stencil_testing.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.stencil_testing.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>

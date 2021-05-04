@@ -18,10 +18,15 @@ int materials_main();
 int model_loading_main();
 #endif
 
+#ifdef STENCIL_TESTING_MAIN
+int stencil_tesing_cpp();
+#endif
+
+
 int main()
 {	
-#ifdef MODEL_LOADING_MAIN
-	return model_loading_main();
+#ifdef STENCIL_TESTING_MAIN
+	return stencil_tesing_cpp();
 #endif
 	return 1;
 }
