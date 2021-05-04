@@ -171,8 +171,8 @@ int stencil_tesing_cpp()
 
 	// load textures
 	// -------------
-	unsigned int cubeTexture = loadTexture(FileSystem::getPath("resources/textures/marble.jpg").c_str());
-	unsigned int floorTexture = loadTexture(FileSystem::getPath("resources/textures/metal.png").c_str());
+	unsigned int cubeTexture = loadTexture(FileSystem::getPath("resources/textures/container.jpg").c_str());
+	unsigned int floorTexture = loadTexture(FileSystem::getPath("resources/textures/container2.png").c_str());
 
 	// shader configuration
 	// --------------------
