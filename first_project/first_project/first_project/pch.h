@@ -8,7 +8,9 @@
 //#define MATERIALS_MAIN
 //#define MODEL_LOADING_MAIN
 //#define STENCIL_TESTING_MAIN
-#define BLENDING_SORTED
+//#define BLENDING_SORTED
+#define FRAMEBUFFERS
+
 
 
 

@@ -134,6 +134,7 @@
     <ClCompile Include="basic_lighting_diffuse.cpp" />
     <ClCompile Include="blending_sorted.cpp" />
     <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="framebuffers.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="materials.cpp" />
     <ClCompile Include="model_loading.cpp" />
@@ -171,6 +172,10 @@
     <None Include="..\..\..\shader\3.3.shaders_class\3.3.shader.vs" />
     <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.fs" />
     <None Include="..\..\..\shader\4.1.shaders_class\4.1.shader.vs" />
+    <None Include="..\..\..\shader\5.1.framebuffers.fs" />
+    <None Include="..\..\..\shader\5.1.framebuffers.vs" />
+    <None Include="..\..\..\shader\5.1.framebuffers_screen.fs" />
+    <None Include="..\..\..\shader\5.1.framebuffers_screen.vs" />
     <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.fs" />
     <None Include="..\..\..\shader\5.1.shaders_class\5.1.shader.vs" />
     <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.fs" />

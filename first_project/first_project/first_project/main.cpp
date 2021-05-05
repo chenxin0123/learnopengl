@@ -26,12 +26,14 @@ int stencil_tesing_cpp();
 int blending_sorted();
 #endif
 
-
+#ifdef FRAMEBUFFERS
+int framebuffers();
+#endif
 
 int main()
 {	
-#ifdef BLENDING_SORTED
-	return blending_sorted();
+#ifdef FRAMEBUFFERS
+	return framebuffers();
 #endif
 	return 1;
 }
