@@ -30,10 +30,14 @@ int blending_sorted();
 int framebuffers();
 #endif
 
+#ifdef CUBEMAPS_SKYBOX
+int cubemaps_skybox();
+#endif
+
 int main()
 {	
-#ifdef FRAMEBUFFERS
-	return framebuffers();
+#ifdef CUBEMAPS_SKYBOX
+	return cubemaps_skybox();
 #endif
 	return 1;
 }

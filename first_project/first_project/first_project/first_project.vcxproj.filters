@@ -54,6 +54,9 @@
     <ClCompile Include="framebuffers.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="cubemaps_skybox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -167,6 +170,18 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\5.1.framebuffers.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\6.1.cubemaps.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\6.1.cubemaps.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\6.1.skybox.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\6.1.skybox.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>
