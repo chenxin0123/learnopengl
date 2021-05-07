@@ -57,6 +57,9 @@
     <ClCompile Include="cubemaps_skybox.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="advanced_glsl_ubo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -182,6 +185,21 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\6.1.skybox.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\8.advanced_glsl.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\8.blue.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\8.green.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\8.red.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\8.yellow.fs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>

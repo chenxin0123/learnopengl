@@ -10,7 +10,7 @@
 //#define STENCIL_TESTING_MAIN
 //#define BLENDING_SORTED
 //#define FRAMEBUFFERS
-#define CUBEMAPS_SKYBOX
+//#define CUBEMAPS_SKYBOX
 
 
 

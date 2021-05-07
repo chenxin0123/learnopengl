@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\classes;$(ProjectDIr)\..\..\..\assimp;$(ProjectDIr)\..\..\..\stb;$(ProjectDIr)\..\..\..;$(ProjectDIr)\..\..\..\;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glad\include;$(ProjectDIr)\..\..\..\classes\learnopengl;$(ProjectDIr)\..\..\..\classes;$(ProjectDIr)\..\..\..\assimp;$(ProjectDIr)\..\..\..\stb;$(ProjectDIr)\..\..\..;$(ProjectDIr)\..\..\..\;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDIr)\..\..\..\glfw\include;$(ProjectDIr)\..\..\..\glfw\lib-vc2017;$(ProjectDIr)\..\..\..\assimp;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -91,6 +91,8 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>STB_IMAGE_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\glad\src\glad.c" />
     <ClCompile Include="a.cpp" />
+    <ClCompile Include="advanced_glsl_ubo.cpp" />
     <ClCompile Include="basic_lighting_diffuse.cpp" />
     <ClCompile Include="blending_sorted.cpp" />
     <ClCompile Include="cubemaps_skybox.cpp" />
@@ -185,6 +188,11 @@
     <None Include="..\..\..\shader\6.1.shaders_class\6.1.shader.vs" />
     <None Include="..\..\..\shader\6.1.skybox.fs" />
     <None Include="..\..\..\shader\6.1.skybox.vs" />
+    <None Include="..\..\..\shader\8.advanced_glsl.vs" />
+    <None Include="..\..\..\shader\8.blue.fs" />
+    <None Include="..\..\..\shader\8.green.fs" />
+    <None Include="..\..\..\shader\8.red.fs" />
+    <None Include="..\..\..\shader\8.yellow.fs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\resources\textures\awesomeface.png" />
