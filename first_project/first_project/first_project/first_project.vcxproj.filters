@@ -60,6 +60,9 @@
     <ClCompile Include="advanced_glsl_ubo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="normal_visualization.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -77,19 +80,16 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\classes\shader_m.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="FileSystem.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\classes\mesh.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\classes\shader.h">
+    <ClInclude Include="..\..\..\classes\model.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\classes\model.h">
+    <ClInclude Include="..\..\..\classes\learnopengl\shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -200,6 +200,21 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\8.yellow.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\9.3.default.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\9.3.default.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\9.3.normal_visualization.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\9.3.normal_visualization.gs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\9.3.normal_visualization.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>

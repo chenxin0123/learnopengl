@@ -142,14 +142,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="materials.cpp" />
     <ClCompile Include="model_loading.cpp" />
+    <ClCompile Include="normal_visualization.cpp" />
     <ClCompile Include="stencil_testing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\classes\camera.h" />
+    <ClInclude Include="..\..\..\classes\learnopengl\shader.h" />
     <ClInclude Include="..\..\..\classes\mesh.h" />
     <ClInclude Include="..\..\..\classes\model.h" />
-    <ClInclude Include="..\..\..\classes\shader.h" />
-    <ClInclude Include="..\..\..\classes\shader_m.h" />
     <ClInclude Include="..\..\..\glm\glm.hpp" />
     <ClInclude Include="..\..\..\stb\stb_image.h" />
     <ClInclude Include="a.h" />
@@ -193,6 +193,11 @@
     <None Include="..\..\..\shader\8.green.fs" />
     <None Include="..\..\..\shader\8.red.fs" />
     <None Include="..\..\..\shader\8.yellow.fs" />
+    <None Include="..\..\..\shader\9.3.default.fs" />
+    <None Include="..\..\..\shader\9.3.default.vs" />
+    <None Include="..\..\..\shader\9.3.normal_visualization.fs" />
+    <None Include="..\..\..\shader\9.3.normal_visualization.gs" />
+    <None Include="..\..\..\shader\9.3.normal_visualization.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\resources\textures\awesomeface.png" />
