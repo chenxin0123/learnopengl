@@ -134,6 +134,7 @@
     <ClCompile Include="..\..\..\glad\src\glad.c" />
     <ClCompile Include="a.cpp" />
     <ClCompile Include="advanced_glsl_ubo.cpp" />
+    <ClCompile Include="advanced_lighting.cpp" />
     <ClCompile Include="anti_aliasing_offscreen.cpp" />
     <ClCompile Include="asteroids_instanced.cpp" />
     <ClCompile Include="basic_lighting_diffuse.cpp" />
@@ -160,6 +161,8 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\shader\1.advanced_lighting.fs" />
+    <None Include="..\..\..\shader\1.advanced_lighting.vs" />
     <None Include="..\..\..\shader\1.model_loading.fs" />
     <None Include="..\..\..\shader\1.model_loading.vs" />
     <None Include="..\..\..\shader\10.3.asteroids.fs" />

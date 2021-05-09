@@ -69,6 +69,9 @@
     <ClCompile Include="anti_aliasing_offscreen.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="advanced_lighting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -248,6 +251,12 @@
       <Filter>资源文件\Shader</Filter>
     </None>
     <None Include="..\..\..\shader\11.2.anti_aliasing.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\1.advanced_lighting.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\1.advanced_lighting.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
   </ItemGroup>
