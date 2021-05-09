@@ -72,6 +72,9 @@
     <ClCompile Include="advanced_lighting.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="gamma_correction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\stb\stb_image.h">
@@ -102,6 +105,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\classes\learnopengl\shader_m.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -259,6 +265,12 @@
     <None Include="..\..\..\shader\1.advanced_lighting.vs">
       <Filter>资源文件\Shader</Filter>
     </None>
+    <None Include="..\..\..\shader\2.gamma_correction.fs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
+    <None Include="..\..\..\shader\2.gamma_correction.vs">
+      <Filter>资源文件\Shader</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\resources\textures\awesomeface.png">
@@ -270,5 +282,10 @@
     <Image Include="..\..\..\resources\textures\wall.jpg">
       <Filter>资源文件\resources\textures</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="first_project.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

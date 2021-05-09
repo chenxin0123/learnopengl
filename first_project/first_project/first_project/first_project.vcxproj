@@ -142,6 +142,7 @@
     <ClCompile Include="cubemaps_skybox.cpp" />
     <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="framebuffers.cpp" />
+    <ClCompile Include="gamma_correction.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="materials.cpp" />
     <ClCompile Include="model_loading.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="a.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\shader\1.advanced_lighting.fs" />
@@ -177,6 +179,8 @@
     <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.basic_lighting.vs" />
     <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.light_cube.fs" />
     <None Include="..\..\..\shader\2.1.basic_lighting_diffuse\2.1.light_cube.vs" />
+    <None Include="..\..\..\shader\2.gamma_correction.fs" />
+    <None Include="..\..\..\shader\2.gamma_correction.vs" />
     <None Include="..\..\..\shader\2.stencil_single_color.fs" />
     <None Include="..\..\..\shader\2.stencil_testing.fs" />
     <None Include="..\..\..\shader\2.stencil_testing.vs" />
@@ -217,6 +221,9 @@
     <Image Include="..\..\..\resources\textures\awesomeface.png" />
     <Image Include="..\..\..\resources\textures\container.jpg" />
     <Image Include="..\..\..\resources\textures\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="first_project.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
